@@ -1,14 +1,17 @@
 package com.example.codetestweb.dto;
 
-public class BoardWriteDto {
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 
-    public BoardWriteDto(String title, String content, String reg_name) {
-        this.title = title;
-        this.content = content;
-        this.reg_name = reg_name;
-    }
+@Getter
+@AllArgsConstructor
+@NoArgsConstructor
+public class BoardWriteDto {
 
     private String title;
     private String content;
     private String reg_name;
 }
+
+
